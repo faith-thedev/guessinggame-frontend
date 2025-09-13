@@ -1,0 +1,414 @@
+/* Home Component Styles */
+.home {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  margin: 20px 0;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.join-section {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.join-section h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Button Styles */
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.btn-secondary {
+  background-color: #2196f3;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #0b7dda;
+}
+
+.btn-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #da190b;
+}
+
+.btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Game Session Styles */
+.game-session {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+}
+
+.session-header h2 {
+  margin: 0;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.master-badge {
+  background: #e74c3c;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.game-container {
+  display: flex;
+  min-height: 600px;
+}
+
+.left-panel {
+  width: 300px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #e9ecef;
+}
+
+.main-panel {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Player List Styles */
+.player-list h3,
+.scoreboard h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.players-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.player.master {
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+}
+
+.player-name {
+  font-weight: bold;
+}
+
+.player-score {
+  color: #666;
+}
+
+/* Scoreboard Styles */
+.scores-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: white;
+  border-radius: 4px;
+}
+
+.score-rank {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.score-username {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.score-points {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* Question Display Styles */
+.question-display {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.form-group textarea,
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Game Active Styles */
+.game-active {
+  background: #e8f5e9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.timer-label {
+  font-weight: bold;
+}
+
+.timer-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.attempts {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f39c12;
+}
+
+/* Guess Input Styles */
+.guess-input {
+  margin-bottom: 20px;
+}
+
+.guess-form {
+  display: flex;
+  gap: 10px;
+}
+
+.guess-field {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Chat Interface Styles */
+.chat-interface {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.chat-interface h3 {
+  background: #2c3e50;
+  color: white;
+  margin: 0;
+  padding: 15px;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  max-height: 300px;
+  background: #fafafa;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.message.system {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
+.message.player {
+  background: #e8f5e9;
+  color: #1b5e20;
+  margin-left: 20px;
+}
+
+.message-time {
+  font-size: 12px;
+  color: #666;
+  margin-right: 8px;
+}
+
+/* Game Finished Styles */
+.game-finished {
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.winner {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.no-winner {
+  font-size: 18px;
+  color: #f57c00;
+  margin-bottom: 10px;
+}
+
+.answer {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Waiting Message Styles */
+.waiting-message {
+  background: #e3f2fd;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.waiting-message h3 {
+  color: #0d47a1;
+  margin-top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .game-container {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .session-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .guess-form {
+    flex-direction: column;
+  }
+}
