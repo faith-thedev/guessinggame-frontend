@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import type {SessionData} from "./types/game";
 import Home from "./components/Home";
 import GameSession from "./components/GameSession";
