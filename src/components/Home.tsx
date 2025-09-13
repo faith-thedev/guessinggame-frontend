@@ -16,7 +16,7 @@ const Home: React.FC<HomeProps> = ({setCurrentView, setSessionData}) => {
 
   const initializeSocket = (): Socket => {
     const newSocket = io("https://subdued-stretch.pipeops.net", {
-      withCredentials: true
+      transports: ["websocket"],
     });
     setSocket(newSocket);
     return newSocket;
